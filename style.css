@@ -928,9 +928,9 @@ p {
     margin: 1.5%;
   }
 }
-@media (max-width: 1500px) {
+@media (max-width: 1950px) {
   .about-us-img-wrapper {
-    grid-row: 3 / -1;
+    grid-row: 3 / -0.5;
   }
 
   .card {
@@ -947,7 +947,7 @@ p {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1350px) {
   .banner h1 {
     font-size: 5rem;
     line-height: 6rem;
@@ -1014,7 +1014,7 @@ p {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1150px) {
   .banner h1 {
     font-size: 4rem;
     line-height: 5rem;
