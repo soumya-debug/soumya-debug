@@ -1,3 +1,7 @@
+var preloader = document.getElementById("loading");
+function myFunction() {
+  preloader.style.display = "none";
+}
 const hamburger = document.querySelector(
   ".header .nav-bar .nav-list .hamburger"
 );
