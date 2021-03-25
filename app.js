@@ -1,7 +1,9 @@
+// Spinner
 var preloader = document.getElementById("loading");
 function myFunction() {
   preloader.style.display = "none";
 }
+// Header
 const hamburger = document.querySelector(
   ".header .nav-bar .nav-list .hamburger"
 );
