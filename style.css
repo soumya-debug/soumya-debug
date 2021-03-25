@@ -48,7 +48,7 @@
   border-right: 3px solid #fcc10f;
 }
 
-.inner.three {
+#loading .inner.three {
   right: 50;
   bottom: 50;
   animation: rotate-three 1s linear infinite;
