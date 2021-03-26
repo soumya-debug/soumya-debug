@@ -1,10 +1,13 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-/* Added Spinner */
+
+/* Spinner Section */
+
 #loading {
   position: fixed;
   width: 100%;
@@ -24,7 +27,6 @@
 
   perspective: 800px;
 }
-
 #loading .inner {
   position: absolute;
   box-sizing: border-box;
@@ -33,21 +35,18 @@
   border-radius: 50%;
   border: 3px solid transparent;
 }
-
 #loading .inner.one {
   left: 50;
   top: 50;
   animation: rotate-one 1s linear infinite;
   border-bottom: 3px solid #2cfffe;
 }
-
 #loading .inner.two {
   right: 50;
   top: 50;
   animation: rotate-two 1s linear infinite;
   border-right: 3px solid #fcc10f;
 }
-
 #loading .inner.three {
   right: 50;
   bottom: 50;
@@ -55,32 +54,9 @@
   border-top: 3px solid #ec1b60;
 }
 
-@keyframes rotate-one {
-  0% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-  }
-}
+/* End Spinner Section */
 
-@keyframes rotate-two {
-  0% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-  }
-}
-
-@keyframes rotate-three {
-  0% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-  }
-  100% {
-    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-  }
-}
+/* Start Section */
 
 html {
   font-size: 10px;
@@ -135,27 +111,8 @@ p {
 .colorChange {
   animation: colorChangeSoumya 3s infinite;
 }
-@keyframes colorChangeSoumya {
-  0% {
-    color: white;
-  }
-  100% {
-    color: crimson;
-  }
-}
 .colorChange1 {
   animation: colorChangeSoumya1 2s infinite;
-}
-@keyframes colorChangeSoumya1 {
-  0% {
-    color: yellow;
-  }
-  50% {
-    color: rgb(197, 197, 0);
-  }
-  100% {
-    color: red;
-  }
 }
 .cta {
   display: inline-block;
@@ -213,7 +170,6 @@ p {
 .brand h1 span {
   color: crimson;
 }
-
 #myBtn {
   background-color: transparent;
   border: 2px solid crimson;
@@ -247,6 +203,7 @@ p {
 }
 
 /* Header section */
+
 #header {
   position: fixed;
   z-index: 1000;
@@ -371,9 +328,11 @@ p {
 #header .hamburger.active .bar::after {
   top: 0;
 }
+
 /* End Header section */
 
 /* Hero Section */
+
 #hero {
   background-image: url(img/Hero-bg.jpg);
   background-size: cover;
@@ -440,6 +399,7 @@ p {
 /* End Hero Section */
 
 /* Credentials Section */
+
 #credentials .credentials {
   flex-direction: column;
   text-align: center;
@@ -499,9 +459,11 @@ p {
   color: white;
   text-align: left;
 }
+
 /* End Credentials Section */
 
 /* Projects section */
+
 #projects .projects {
   flex-direction: column;
   max-width: 1200px;
@@ -575,9 +537,11 @@ p {
 #projects .project-item:hover .project-img img {
   transform: scale(1.1);
 }
+
 /* End Projects section */
 
 /* Additional section */
+
 .about-us {
   width: 100%;
   background-color: #0e232c;
@@ -592,7 +556,7 @@ p {
 }
 
 .section-heading {
-  font-family: "Muli", serif;
+  /* font-family: "Muli", serif; */
   font-size: 5rem;
   font-weight: 300;
   color: red;
@@ -694,9 +658,11 @@ p {
   border-radius: 0.5rem;
   transition: opacity 0.3s;
 }
+
 /* End Additional section */
 
 /* About Section */
+
 #about .about {
   flex-direction: column-reverse;
   text-align: center;
@@ -745,9 +711,11 @@ p {
     )
     1;
 }
+
 /* End About Section */
 
 /* contact Section */
+
 #contact .contact {
   flex-direction: column;
   max-width: 1200px;
@@ -844,9 +812,59 @@ p {
   color: #fff;
   border-radius: 0.3rem;
 }
+
 /* End Footer */
 
 /* Keyframes */
+
+@keyframes rotate-one {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-two {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+
+@keyframes rotate-three {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+
+@keyframes colorChangeSoumya {
+  0% {
+    color: white;
+  }
+  100% {
+    color: crimson;
+  }
+}
+
+@keyframes colorChangeSoumya1 {
+  0% {
+    color: yellow;
+  }
+  50% {
+    color: rgb(197, 197, 0);
+  }
+  100% {
+    color: red;
+  }
+}
+
 @keyframes hamburger_puls {
   0% {
     opacity: 1;
@@ -857,6 +875,7 @@ p {
     transform: scale(1.4);
   }
 }
+
 @keyframes text_reveal_box {
   50% {
     width: 100%;
@@ -867,20 +886,24 @@ p {
     left: 100%;
   }
 }
+
 @keyframes text_reveal {
   100% {
     color: white;
   }
 }
+
 @keyframes text_reveal_name {
   100% {
     color: crimson;
     font-weight: 500;
   }
 }
+
 /* End Keyframes */
 
 /* Media Query For Tablet */
+
 @media only screen and (min-width: 768px) {
   .cta {
     font-size: 2.5rem;
@@ -891,19 +914,24 @@ p {
   }
 
   /* Hero */
+
   #hero h1 {
     font-size: 7rem;
   }
+
   /* End Hero */
 
   /* Credentials Section */
+
   #credentials .credential-bottom .credential-item {
     flex-basis: 45%;
     margin: 2.5%;
   }
+
   /* End Credentials Section */
 
   /* Project */
+
   #projects .project-item {
     flex-direction: row;
   }
@@ -922,9 +950,11 @@ p {
   #projects .all-projects .project-img {
     height: 100%;
   }
+
   /* End Project */
 
   /* About */
+
   #about .about {
     flex-direction: row;
   }
@@ -947,9 +977,12 @@ p {
   #about .col-right h1 {
     text-align: left;
   }
-  /* End About */
+}
 
-  /* contact  */
+/* End About */
+
+/* contact  */
+@media only screen and (min-width: 1000px) {
   #contact .contact {
     flex-direction: column;
     padding: 100px 0;
@@ -981,13 +1014,17 @@ p {
     text-align: left;
     padding-left: 20px;
   }
-  /* End contact  */
 }
+
+/* End contact  */
+
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
+
 @media only screen and (min-width: 1200px) {
   /* header */
+
   #header .hamburger {
     display: none;
   }
@@ -1007,6 +1044,7 @@ p {
   #header .nav-list ul a:after {
     display: none;
   }
+
   /* End header */
 
   #credentials .credential-bottom .credential-item {
@@ -1145,5 +1183,7 @@ p {
     height: 18rem;
   }
 }
+
 /* End  Media Query For Desktop */
+
 /* End  My Website */
