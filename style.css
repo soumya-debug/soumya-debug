@@ -5,6 +5,14 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "Raleway-medium";
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: "Raleway-semibold";
+  src: url(../fonts/Raleway-SemiBold.ttf);
+}
 
 /* Spinner Section */
 
@@ -405,7 +413,7 @@ p {
       rgba(35, 43, 56, 0.9),
       rgba(35, 43, 56, 0.9)
     ),
-    url(/img/bg-1.jpg);
+    url(./img/bg-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -715,7 +723,7 @@ p {
       rgba(35, 43, 56, 0.9),
       rgba(35, 43, 56, 0.9)
     ),
-    url(/img/bg-2.jpg);
+    url(./img/bg-2.jpg);
   background-color: #485563;
   background-size: cover;
   background-repeat: no-repeat;
