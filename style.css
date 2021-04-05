@@ -5,14 +5,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-@font-face {
+/* @font-face {
   font-family: "Raleway-medium";
   src: url(../fonts/Raleway-Medium.ttf);
 }
 @font-face {
   font-family: "Raleway-semibold";
   src: url(../fonts/Raleway-SemiBold.ttf);
-}
+} */
 
 /* Spinner Section */
 
@@ -817,6 +817,7 @@ p {
 /* End About Section */
 
 /* contact Section */
+
 #contact .contact {
   flex-direction: column;
   max-width: 1200px;
